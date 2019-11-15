@@ -1,0 +1,14 @@
+<input placeholder="Titulos" [(ngModel)]="vendas.titulo">
+<input placeholder="Codigo" [(ngModel)]="vendas.codigo">
+<input placeholder="Preço" [(ngModel)]="vendas.preco">
+<input placeholder="Tipo" [(ngModel)]="vendas.tipo">
+<button (click)="publicar(vendas)">Clique</button>
+
+
+<div *ngFor="let fluid of fluxos">
+  <input placeholder="Titulos" [(ngModel)]="fluid.titulo">
+  <input placeholder="Codigo" [(ngModel)]="fluid.codigo">
+  <input placeholder="Preço" [(ngModel)]="fluid.preco">
+  <input placeholder="Tipo" [(ngModel)]="fluid.tipo">
+  <button (click)="Del(fluid)">Delete</button>
+</div>

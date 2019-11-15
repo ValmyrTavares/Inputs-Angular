@@ -1,0 +1,64 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" class="form-group column">
+  <div class="form-group">
+    <div class="col-sm-4">
+      <label for="nome">Nome </label>
+      <input type="text" class="form-control" id="nome" placeholder="Nome" [(ngModel)]="usuario.nome" name="nome"
+        required #nome=ngModel>
+    </div>
+    <div *ngIf="!nome.valid && nome.touched">
+      Nome é Obrigatório
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-4">
+      <label for="nome">email </label>
+      <input type="text" class="form-control" id="email" placeholder="nome@email.com" [(ngModel)]="usuario.email"
+        name="email" required #email=ngModel>
+    </div>
+    <div *ngIf="!email.valid && nome.touched">
+      Email é Obrigatório
+    </div>
+    <div>
+      <div class="col-md-10">
+        <label for="rua">Rua </label>
+        <input type="text" class="form-control" id="rua" placeholder="rua" [(ngModel)]="usuario.rua" name="rua" required
+          #rua=ngModel>
+      </div>
+      <div *ngIf="!rua.valid && rua.touched">
+        rua é Obrigatório
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-md-3">
+        <label for=cep>CEP</label>
+        <input type="text" class="form-control" id="cep" name="cep" ngModel required #cep="ngModel">
+      </div>
+      <div class="col-md-3">
+        <label for=numero>NUMERO</label>
+        <input type="text" class="form-control" id="numero" name="numero" ngModel required #numero="ngModel">
+      </div>
+      <div class="col-md-3">
+        <label for=complemento>complemento</label>
+        <input type="text" class="form-control" id="complemento" name="complemento" ngModel required
+          #complemento="ngModel">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-md-4">
+        <label for=bairro>Bairro</label>
+        <input type="text" class="form-control" id="bairro" name="bairro" ngModel required #bairro="ngModel">
+      </div>
+      <div class="col-md-3">
+        <label for=cidade>Cidade</label>
+        <input type="text" class="form-control" id="cidade" name="cidade" ngModel required #cidade="ngModel">
+      </div>
+      <div class="col-md-2">
+        <label for=estado>Estado</label>
+        <input type="text" class="form-control" id="estado" name="estado" ngModel required #estado="ngModel">
+      </div>
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary" [disabled]="!f.valid">Submit</button>
+
+</form>>

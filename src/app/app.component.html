@@ -1,0 +1,123 @@
+<!-- <nav class="navbar navbar-default">
+ 
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="container-fluid">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav> -->
+
+<!-- <input [(ngModel)]="currentuser.username">
+<input [(ngModel)]="currentuser.password">
+<button (click)="add()">Add</button>
+<button (click)="show()">SHOW JSON</button>
+
+<h1>{{currentuser.username}}</h1>
+<br>
+<h2>{{currentuser.password}}</h2>
+
+<h1>{{nome}}</h1>
+<br>
+<h2>{{sobrenome}}</h2>
+
+<div *ngFor="let user of users">
+  <input [(ngModel)]="user.username">
+  <input [(ngModel)]="user.password">
+</div> -->
+
+<!-- <input [(ngModel)]="shultz.username"> -->
+<!-- <input [(ngModel)]="shutz.password">
+<button (click)="mostra()">clique</button>
+
+{{username}} -->
+
+<!-- DEU CERTO -->
+
+<!-- <input placeholder="nome" [(ngModel)]="interface.nome">
+<input placeholder="sobrenome" [(ngModel)]="interface.sobrenome">
+<input placeholder="idade" [(ngModel)]="interface.idade">
+<input placeholder="estadoCivil" [(ngModel)]="interface.estadoCivil">
+<input placeholder="nacionalidade" [(ngModel)]="interface.nacionalidade">
+<input placeholder="profissao" [(ngModel)]="interface.profissao">
+<button (click)="mostrar()">Clique</button>
+
+<div *ngFor="let user of users">
+  <input placeholder="nome" [(ngModel)]="user.nome">
+  <input placeholder="sobrenome" [(ngModel)]="user.sobrenome">
+  <input placeholder="idade" [(ngModel)]="user.idade">
+  <input placeholder="estadoCivil" [(ngModel)]="user.estadoCivil">
+  <input placeholder="nacionalidade" [(ngModel)]="user.nacionalidade">
+  <input placeholder="profissao" [(ngModel)]="user.profissao">
+</div>
+
+<h1>{{interface.nome}}</h1>
+<h1>{{interface.idade}}</h1> -->
+
+<!-- <h1>Cadastrar filmes</h1>
+<input placeholder="titulo" [(ngModel)]="filme.titulo">
+<input placeholder="Preço" [(ngModel)]="filme.preco">
+<input placeholder="Tipo" [(ngModel)]="filme.tipo">
+<input placeholder="Codigo" [(ngModel)]="filme.codigo">
+<button (click)="adicionar()">clique</button>
+
+
+<div *ngFor="let pl of play">
+  <input placeholder="titulo" [(ngModel)]="pl.titulo">
+  <input placeholder="Preço" [(ngModel)]="pl.preco">
+  <input placeholder="Tipo" [(ngModel)]="pl.tipo">
+  <input placeholder="Codigo" [(ngModel)]="pl.codigo">
+  <button (click)="delete(pl)">delete</button>
+</div>
+
+
+<h1>{{filme.titulo}}</h1>
+<p>{{filme.preco}}</p>
+<p>{{filme.tipo}}</p>
+<p>{{filme.codigo}}</p> -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Angular Forms</a>
+  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button> -->
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li routerLinkActive="active">
+        <a routerLink="/template"> Form - Template Driven</a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="/dataForm">Form - Data Driven</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div>
+  <router-outlet></router-outlet>
+</div>
